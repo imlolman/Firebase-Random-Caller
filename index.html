@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Unknown Call</title>
+</head>
+<body onload="javascript:setup()">
+  Name: <input type="text" id="name">&emsp;
+  Select a Voice: <select id='voice'>
+    <option value="0">Default</option>
+  </select>&emsp;
+  <button onclick="me.ready()" id="connectBTN">Connect a Call</button>
+  <p>Status: <span id="status">Please Wait while we connect to server.</span></p>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-firestore.js"></script>
+<script src="firebase.js"></script>
+<script src="caller.js?2"></script>
+<script src="sketch.js?1"></script>
+</html>
